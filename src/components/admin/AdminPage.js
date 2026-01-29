@@ -219,9 +219,7 @@ const AdminPage = () => {
         </div>
         
         <div className="dashboard-actions-pro">
-          <button className="btn-icon-pro" title="Export">
-            <Download size={18} />
-          </button>
+          
           <button 
             className="btn-primary-pro"
             onClick={() => {
@@ -275,13 +273,7 @@ const AdminPage = () => {
           <div className="stat-label-pro">Active Users</div>
         </div>
 
-        <div className="stat-card-pro pending">
-          <div className="stat-icon-pro">
-            <Clock size={24} />
-          </div>
-          <div className="stat-value-pro">0</div>
-          <div className="stat-label-pro">Pending</div>
-        </div>
+        
       </div>
 
       {/* Professional Slideshow Section */}
