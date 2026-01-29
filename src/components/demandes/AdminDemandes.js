@@ -215,7 +215,7 @@ const AdminDemandes = () => {
 
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
-      <h2>Gestion des Demandes (Admin)</h2>
+      <h2>Gestion des Demandes (Admin: <strong> {user?.nom || user?.username || "Administrateur"}</strong>)</h2>
 
       
       {/* Statistics */}
