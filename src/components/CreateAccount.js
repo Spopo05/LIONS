@@ -3,6 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Eye, EyeOff } from "lucide-react"; // Icons for show/hide password
 import logo2 from "../assets/lion1.png";
+import './CreateAccount.css';
 
 const CreateAccount = () => {
   const [formData, setFormData] = useState({

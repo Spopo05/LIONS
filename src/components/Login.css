@@ -1,0 +1,134 @@
+/* ================= PAGE ================= */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ededed27;
+  padding: 15px;
+}
+
+/* ================= LOGIN CARD ================= */
+.login-form {
+  width: 100%;
+  max-width: 320px;
+  background: rgba(131, 2, 2, 0.726);
+  padding: 22px 20px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.873);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔥 LION IMAGE INSIDE CARD */
+.login-form::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('../assets/lionLOGIN.png') no-repeat   ;
+  background-size: 260px;
+   /* watermark style */
+   opacity:0.58;
+}
+
+/* Keep content above background */
+.login-form * {
+  position: relative;
+  z-index: 2;
+}
+
+/* ================= LOGO ================= */
+.logo1 {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  margin-bottom: 6px;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
+}
+
+/* ================= TITLE ================= */
+.login-form h2 {
+  color: white;
+  margin-bottom: 10px;
+  font-family: 'Old English Five', sans-serif;
+  font-size: 22px;
+}
+
+/* ================= INPUTS ================= */
+.login-form input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 9px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* ================= PASSWORD FIELD ================= */
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  padding-right: 38px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 8px;
+  top: 46%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #7e0606;
+}
+
+/* ================= BUTTON ================= */
+.btnc {
+  width: 100%;
+  padding: 9px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #8a0503, #b91c1c);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btnc:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(138,5,3,0.4);
+}
+
+.btnc:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* ================= ERROR ================= */
+.login-form ul {
+  font-size: 12px;
+  margin: 6px 0;
+  color: #ffdede;
+}
+
+/* ================= TEXT ================= */
+.login-form p {
+  color: #ffdede;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.login-form a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}

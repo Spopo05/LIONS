@@ -1,11 +1,10 @@
 import { createStore, applyMiddleware } from 'redux';
 import { thunk } from 'redux-thunk';
 import userReducer from './reducers';
-import { loadState } from '../persistStore';
 
 const loadPersistedState = () => {
   try {
-    const serializedState = localStorage.getItem('users');
+    const serializedState = localStorage.getItem('user'); // FIXED: 'user' not 'users'
     return serializedState ? JSON.parse(serializedState) : undefined;
   } catch (e) {
     return undefined;
@@ -23,7 +22,7 @@ const configureStore = () => {
 
 const store = configureStore();
 
-// Persistence subscription
+// Persistence subscription - FIXED: Save entire state
 store.subscribe(() => {
   const state = store.getState();
   try {

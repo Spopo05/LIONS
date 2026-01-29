@@ -14,7 +14,7 @@ const ProtectedRoute = ({ adminOnly = false }) => {
   }
 
   if (adminOnly && !persistedUser.admin) {
-    return <Navigate to="/profile" replace />;
+    return <Navigate to="/Accuiel" replace />;
   }
 
   // Sync Redux with localStorage

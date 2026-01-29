@@ -5,6 +5,8 @@ import { loginUser } from "../redux/actions";
 import { Link, useNavigate } from "react-router-dom";
 import { Eye, EyeOff } from "lucide-react";
 import logo1 from "../assets/lion1.png";
+import './Login.css';
+
 
 const Login = () => {
   const [username, setUsername] = useState("");
