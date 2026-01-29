@@ -216,26 +216,7 @@ const AdminDemandes = () => {
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
       <h2>Gestion des Demandes (Admin)</h2>
-      
-      {/* Admin Info Banner */}
-      <div style={{ 
-        backgroundColor: '#e3f2fd', 
-        padding: '15px', 
-        borderRadius: '8px',
-        marginBottom: '20px',
-        borderLeft: '4px solid #2196f3'
-      }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <i className="fas fa-bell" style={{ color: '#2196f3', fontSize: '20px' }}></i>
-          <div>
-            <strong>Notifications par utilisateur</strong>
-            <p style={{ margin: '5px 0 0 0', fontSize: '14px', color: '#666' }}>
-              Chaque utilisateur reçoit uniquement ses propres notifications.
-              Vous recevez des notifications pour chaque action administrative.
-            </p>
-          </div>
-        </div>
-      </div>
+
       
       {/* Statistics */}
       <div style={{ display: 'flex', gap: '15px', marginBottom: '30px', flexWrap: 'wrap' }}>
