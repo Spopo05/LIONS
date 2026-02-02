@@ -18,6 +18,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "cp public/_redirects build/_redirects",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
