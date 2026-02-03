@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Spopo05.github.io/LIONS",
   "name": "myprojet",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "cp public/_redirects build/_redirects",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
