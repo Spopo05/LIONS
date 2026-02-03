@@ -640,7 +640,7 @@ const AdminPage = () => {
                       value={formData.prenom}
                       onChange={(e) => setFormData({ ...formData, prenom: e.target.value })}
                       required
-                      placeholder="John"
+                      placeholder="Mohamed"
                     />
                   </div>
                   
@@ -652,7 +652,7 @@ const AdminPage = () => {
                       value={formData.nom}
                       onChange={(e) => setFormData({ ...formData, nom: e.target.value })}
                       required
-                      placeholder="Doe"
+                      placeholder="Aloaui"
                     />
                   </div>
                   
@@ -664,7 +664,7 @@ const AdminPage = () => {
                       value={formData.pseudo}
                       onChange={(e) => setFormData({ ...formData, pseudo: e.target.value })}
                       required
-                      placeholder="johndoe"
+                      placeholder="six"
                     />
                   </div>
                   
@@ -689,7 +689,7 @@ const AdminPage = () => {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       required
-                      placeholder="john.doe@example.com"
+                      placeholder="mohamed.six@example.com"
                     />
                   </div>
                   
@@ -734,7 +734,7 @@ const AdminPage = () => {
                       className="form-control-pro"
                       value={formData.Devise}
                       onChange={(e) => setFormData({ ...formData, Devise: e.target.value })}
-                      placeholder="USD"
+                      placeholder="MAD"
                     />
                   </div>
                   
@@ -745,7 +745,7 @@ const AdminPage = () => {
                       className="form-control-pro"
                       value={formData.Pays}
                       onChange={(e) => setFormData({ ...formData, Pays: e.target.value })}
-                      placeholder="United States"
+                      placeholder="Morocco"
                     />
                   </div>
                   

@@ -27,7 +27,7 @@ const Login = () => {
         localStorage.setItem('user', JSON.stringify(user));
         
         dispatch(loginUser(user));
-        navigate(user.admin ? "/admin" : "/profile");
+        navigate(user.admin ? "/admin" : "/accueil");
       } else {
         setError("Invalid credentials");
       }

@@ -59,8 +59,7 @@ const Layout = ({ children }) => {
           <img src={logo} alt="Logo" className="logo" style={{ height: '45px' }} />
           <div style={{ 
             width: '4px', 
-            height: '30px', 
-            backgroundColor: getContrastColor(currentColor),
+            height: '50px', 
             borderRadius: '2px',
             opacity: 0.5
           }} />
@@ -147,16 +146,11 @@ const Layout = ({ children }) => {
                   fontSize: '1rem',
                   padding: '0.5rem 1rem',
                   borderRadius: '6px',
-                  backgroundColor: 'rgba(255,255,255,0.15)',
                   transition: 'all 0.3s ease'
                 }}
                 onMouseEnter={(e) => {
-                  e.target.style.backgroundColor = 'rgba(255,255,255,0.25)';
-                  e.target.style.transform = 'translateY(-2px)';
-                }}
-                onMouseLeave={(e) => {
-                  e.target.style.backgroundColor = 'rgba(255,255,255,0.15)';
-                  e.target.style.transform = 'translateY(0)';
+                  e.target.style.backgroundColor = 'transparent';
+                  e.target.style.transform = 'translateY(0px)';
                 }}
               >
                 Admin Users

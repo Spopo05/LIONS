@@ -146,14 +146,14 @@ header nav a:hover::after {
 }
 /* Logo */
 .logo {
-  height: 45px;
+  height: 40px;
   width: auto;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.839));
   transition: var(--transition);
 }
 
 .logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.25);
   filter: drop-shadow(0 4px 8px rgb(0, 0, 0));
 }
 
